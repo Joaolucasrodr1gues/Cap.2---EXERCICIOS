@@ -1,0 +1,7 @@
+nome = input('Qual o seu nome completo? ')
+print(nome.upper())#nome em maiusculo
+print(nome.lower())#nome em minusculo
+print(len(nome))#tamanho do nome
+nome_separado = nome.split()#separa os nomes
+novo_nome = ' '.join(nome_separado[:-1] + ['do Inatel'])#substitui o ultimo nome por "do inatel"
+print(novo_nome)#nome com a modificação
