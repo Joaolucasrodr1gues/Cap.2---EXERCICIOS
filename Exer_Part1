@@ -1,0 +1,28 @@
+1.
+nome = input('Qual o seu nome completo? ')
+print(nome.upper())#nome em maiusculo
+print(nome.lower())#nome em minusculo
+print(len(nome))#tamanho do nome
+nome_separado = nome.split()#separa os nomes
+novo_nome = ' '.join(nome_separado[:-1] + ['do Inatel'])#substitui o ultimo nome por "do inatel"
+print(novo_nome)#nome com a modificação
+
+2.
+numero = int(input("Digite um número para fazer a tabuada: "))#um número para fazer a tabuada
+inicio = int(input("Digite o inicio do intervalo : "))# intervalo da tabuada
+fim = int(input("Digite o final do intervalo : "))
+
+print("\nAqui está a tabuada:")
+for i in range(inicio, fim + 1):#mostrar a tabuada no intervalo escolhido
+    resultado = numero * i
+    print(numero, "x", i, "=", resultado)
+
+3.
+sexo = input("Informe seu sexo: [M/F] ").strip().upper()# usuário informa o sexo
+
+#enquanto o usuário não digitar "M" ou "F", vai rodar o while
+while sexo != "M" and sexo != "F":
+    print("Opção inválida! Tente novamente.")
+    sexo = input("Informe seu sexo: [M/F] ").strip().upper()
+
+print("Sexo", sexo, "registrado com sucesso!")
